@@ -4,7 +4,7 @@
     with sum_sales as (
         select * 
         from sales
-        where age > 5
+        where age > 30
     )
 
     select * from sum_sales
