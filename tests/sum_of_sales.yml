@@ -1,0 +1,16 @@
+#
+
+version: 2
+
+models:
+  - name: sum_sales
+    tests:
+      - not_null:
+          columns: [id, age] # Replace with the actual column names in sum_sales
+          severity: ERROR
+          description: "Ensure all columns are not null."
+
+      - unique:
+          columns: [id, age]  # Replace with the actual column names in sum_sales
+          severity: ERROR
+          description: "Ensure all columns are unique."
